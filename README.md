@@ -1,7 +1,7 @@
 # Website Boilerplates
 
 ## Requirements
-- Node v14
+- Node v20
 - Gulp v4
 - Gem sass-lint
 
