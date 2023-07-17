@@ -1,0 +1,31 @@
+// ==========================================================================
+// Modal
+// ==========================================================================
+
+.modal {
+	.modal-header {
+		.close {
+			position: absolute;
+		    right: 20px;
+		    width: 100%;
+		    text-align: right;
+		    opacity: 1;
+		    font-size: 50px;
+		    padding-top: 5px;
+		    padding-bottom: 10px;
+		    z-index: 9;
+		}
+	}
+
+	.modal-content {
+		.modal-body {
+		}
+	}
+}
+
+.modal-backdrop {
+	&.show {
+		opacity: 0.75;
+		background-color: rgba(000,000,000,0.6);		
+	}
+}

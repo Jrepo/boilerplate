@@ -1,0 +1,57 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+footer, .footer {
+  width: 100%;
+  padding: 40px 17px;
+  color: $white;
+  background-color: $brand-darkblue;
+
+  &-logo {
+    padding-bottom: 32px;
+
+    img {
+      width: 250px;
+      height: auto;
+    }
+  }
+
+  &-link {
+    text-decoration: underline;
+
+    @include breakpoint(desktop-large) {
+    	display: contents;
+    } 	
+    
+    &:visited,
+    &:focus {
+      color: $white;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 24px;
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &-legal {
+    padding-top: 32px;
+
+    p {
+      	font-size: rem(14);
+      	margin: 0;
+      	text-align: center;
+    	color: white;
+
+      &:last-child {
+        font-weight: 600;
+      }
+    }
+  }
+}

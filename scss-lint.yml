@@ -1,0 +1,138 @@
+# Default application configuration that all configurations inherit from.
+linters:
+  BorderZero:
+    enabled: false
+    
+  CapitalizationInSelector:
+    enabled: true
+    
+  ColorKeyword:
+    enabled: false
+    
+  ColorVariable:
+    enabled: false
+    
+  Comment:
+    enabled: false
+
+  DebugStatement:
+    enabled: true
+    
+  DeclarationOrder:
+    enabled: false
+
+  DuplicateProperty:
+    enabled: false
+
+  EmptyLineBetweenBlocks:
+    enabled: false
+    
+  EmptyRule:
+    enabled: false
+
+  FinalNewline:
+    enabled: false
+
+  HexFormat:
+    enabled: true
+
+  HexLength:
+    enabled: false
+
+  HexNotation: 
+    enabled: false
+
+  IdWithExtraneousSelector:
+    enabled: true
+
+  ImportantRule:
+    enabled: false
+
+  Indentation:
+    enabled: false
+    width: 2
+
+  LeadingZero:
+    enabled: false
+
+  NameFormat:
+    enabled: false
+
+  NestingDepth:
+    max_depth: 20
+
+  MergeableSelector:
+    enabled: false
+
+  PlaceholderInExtend:
+    enabled: false
+
+  PropertySpelling:
+    enabled: true
+    extra_properties: [behavior]
+
+  PropertySortOrder:
+    enabled: false
+
+  PseudoElement: 
+    enabled: false
+
+  QualifyingElement:
+    enabled: true
+    allow_element_with_attribute: true
+    allow_element_with_class: true
+    allow_element_with_id: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 9
+
+  Shorthand:
+    enabled: true
+
+  SingleLinePerSelector:
+    enabled: false
+
+  SortedProperties:
+    enabled: false
+
+  SpaceAfterComma:
+    enabled: false
+
+  SpaceAfterPropertyColon:
+    enabled: false
+
+  SpaceAfterPropertyName:
+    enabled: true
+
+  SpaceBeforeBrace:
+    enabled: false
+
+  SpaceBetweenParens:
+    enabled: true
+    spaces: 0
+
+  StringQuotes:
+    enabled: true
+    style: single_quotes # or double_quotes
+
+  TrailingWhitespace:
+    enabled: false
+
+  TrailingSemicolon: 
+    enabled: false
+
+  TrailingSemicolonAfterPropertyValue:
+    enabled: true
+
+  UrlQuotes:
+    enabled: false
+
+  VendorPrefix:
+    enabled: false
+
+  ZeroUnit:
+    enabled: false
+
+  Compass::*:
+    enabled: false

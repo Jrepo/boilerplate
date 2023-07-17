@@ -1,0 +1,35 @@
+.tooltip-wrapper {
+	position: relative;
+
+	.tooltip {
+		position: absolute;
+		top: 2em;
+		left: 0;
+		padding: 0.5em;
+		background-color: #000;
+		color: #fff;
+		border-radius: 0.5em;
+		width: max-content;
+		transition: visibility 0s, opacity 0.5s;
+		visibility: visible;
+		opacity: 1;
+		&[hidden] {
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		p, span {
+			color: white;
+		}
+	}
+	  
+	button
+		&:hover .tooltip,
+		&:focus .tooltip {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+
+

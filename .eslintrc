@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "no-empty": 2,
+    "no-extra-parens": [2,"all"],
+    "no-extra-semi": 2,
+    "valid-typeof": 2,
+    "no-unexpected-multiline": 2,
+    "eqeqeq": [2,"smart"],
+    "no-alert": 1,
+    "no-eval": 1,
+    "no-floating-decimal": 1,
+    "no-multi-str": 1,
+    "no-unused-expressions": 1,
+    "strict": [2,"function"],
+    "array-bracket-spacing": [2,"never",{"singleValue":false}],
+    "brace-style": [2,"1tbs",{}],
+    "camelcase": [2,{"properties":"always"}],
+    "comma-spacing": [2,{"after":true}]
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  }
+  
+}

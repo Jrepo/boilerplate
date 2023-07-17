@@ -1,0 +1,23 @@
+// ==========================================================================
+// References
+// ==========================================================================
+
+.references {
+	color: $brand-darkgrey;
+	padding: 0 20px;
+
+	h2,
+	ol {
+		text-align: left;
+		color: $brand-darkgrey;
+		font-size: 11px;
+		line-height: 17px;
+		//font-family: poppins;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	ol {
+		padding-left: 12px;
+	}
+}

@@ -1,0 +1,152 @@
+// ==========================================================================
+// Rem Conversion Function
+// ==========================================================================
+
+@use "sass:math";
+
+@function rem($pixels, $context: 16) {
+	@return calc($pixels / $context) * 1rem;
+}
+/*
+Usage Example:
+h1 {
+	font-size: rem(32); // 32px => 3.2rem
+}
+
+p {
+	font-size: rem(24); // 24px => 2.4rem
+}
+*/
+
+
+// ==========================================================================
+// Font Base Styles
+// ==========================================================================
+body {
+	color: black;
+	font-family: $body;
+
+	font-size: rem(16);
+	letter-spacing: 0px;
+	line-height: rem(22);
+	font-weight: 300;
+
+	@include breakpoint(desktop-large) {
+		font-size: rem(20);
+		letter-spacing: 0px;
+		line-height: rem(27);
+	}
+}
+
+a, button {
+	font-family: $buttons;
+	color: $brand-darkgrey;
+	text-decoration: underline;
+	font-size: rem(16);
+	line-height: rem(16);
+
+	&:hover, &:focus {
+		color: $brand-darkgrey;
+		text-decoration: underline;
+	}
+
+	@include breakpoint(desktop-large) {
+		font-size: rem(20);
+		letter-spacing: 0px;
+		line-height: rem(27);
+	}
+}
+
+h1, .h1 {
+	font-family: $h1;
+	padding: 0;
+	margin: 0;
+	color: $brand-darkgrey;
+	font-size: rem(28);
+	text-transform: uppercase;
+
+	@include breakpoint(desktop-large) {
+		font-size: rem(24);
+		letter-spacing: 0px;
+		line-height: rem(32); 
+	}
+}
+
+h2, .h2 {
+	font-family: $h2;
+	padding: 0;
+	margin: 0;
+	color: $brand-darkgrey;
+	font-size: rem(18);
+	text-transform: uppercase;
+	
+	@include breakpoint(desktop-large) {
+		font-size: rem(36);
+		line-height: rem(47);
+	}
+}
+
+h3, .h3 {
+	font-family: $h3;
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+	color: $brand-darkgrey;
+	font-size: rem(16);
+	letter-spacing: normal;
+	line-height: rem(34);
+
+	@include breakpoint(desktop-large) {
+		font-size: rem(23);
+		letter-spacing: 0px;
+		line-height: rem(29); 
+	}
+}
+
+h4, .h4 {
+	font-family: $h4;
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+	color: $brand-darkgrey;
+	
+	@include breakpoint(desktop-large) {
+		font-size: rem(20);
+		letter-spacing: 0px;
+		line-height: rem(26); 
+	}
+}
+
+p, .p {
+	aside, section & {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	font-family: $body;
+	padding: 0;
+	margin: 0;
+ 	font-weight: 400;
+	color: $brand-darkgrey;
+	font-size: rem(16);
+
+
+	@include breakpoint(desktop-large) {
+		font-size: rem(16);
+		letter-spacing: 0px;
+		line-height: rem(18); 
+	}	
+}
+
+b, strong {
+	font-style: bold;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+}
+
+sup {
+	top: -.3em;
+}

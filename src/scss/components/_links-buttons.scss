@@ -1,0 +1,165 @@
+// ==========================================================================
+// Links & Buttons
+// ==========================================================================
+
+a, button {
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+
+  img, span, b, div  {
+    pointer-events: none;
+  }
+
+  &.btn {
+    &-primary {
+      background-color: $brand-darkblue;
+      padding: 16px 31px;
+      border-radius: 27px;
+      border: none;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+      margin-top: rem(20);
+      text-decoration: none;
+      color: white;
+      &:hover,
+      &:focus {
+        background-color: $brand-darkblue;
+      }
+    
+      &-dark {
+        background-color: $brand-darkblue;
+        padding: 16px 31px;
+        border-radius: 50px;
+        border: 3px solid $brand-gold;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+
+        @include breakpoint(desktop) {
+          padding: 10px 30px;
+        }
+        
+        &:hover,
+        &:focus {
+          background-color: $brand-darkblue;
+        }
+      } 
+
+      &-download {
+        text-align: left;
+        position: relative;
+        padding: 15px 50px 15px 31px;
+        &::after{
+          position: absolute;
+          display: inline-block;
+          top: 25%;
+          right: 10px;
+          content: '';
+          background-image: url(_IMGS/icon-download.svg);
+          background-size: cover;
+          width: rem(22);
+          height: rem(22);
+          margin: 0 rem(10);
+        }
+      }
+    }
+
+    &.underline {
+      text-decoration: underline;
+    }
+    
+    &-secondary {
+      color: $brand-darkgrey;
+      border: none; 
+      background-color: transparent;
+      font-weight: 500;
+      margin-top: rem(20);
+      display: flex;
+      align-items: center;
+
+      &:hover,
+      &:focus {
+        color: $brand-darkgrey;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        background-image: url(/static/static/images/icon-right-arrow.svg);
+        background-size: 100% 100%;
+      }
+    }
+
+    &-tertiary {
+      background-color: transparent;
+      border: 1px solid $brand-gold;
+      padding: 15px 49px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      color: $brand-darkblue;
+      margin-top: rem(20);
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      text-align: left;
+      @include breakpoint(desktop) {
+        text-align: center;
+        font-size: rem(20);
+        padding: 22px 61px 21px 40px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      span {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 0%;
+        width: 30px;
+        height: 100%;
+        margin-left: 20px;
+        background-image: url(_IMGS/icon-right-arrow.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+    }
+
+    &-accordion {
+      background: transparent;
+      color: $brand-darkblue;
+      border: 2px solid $brand-darkblue;
+      padding: 16px 30px;
+      border-radius: 27px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+      margin-top: rem(20);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        background-image: url(/static/static/images/icon-plus.svg);
+        background-size: 100% 100%;
+      }
+
+      &:hover,
+      &:focus {
+        span {
+          height: 2px;
+          background-image: url(/static/static/images/icon-minus.svg);
+        }
+      }
+    }
+  }
+}

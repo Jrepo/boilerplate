@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#21186a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Icon_feather-plus-circle" data-name="Icon feather-plus-circle" transform="translate(-9.5 -9.5)">
+        <path id="Path_2023" data-name="Path 2023" class="cls-1" d="M18 12v20" transform="translate(2.5 -1.5)"/>
+        <path id="Path_2024" data-name="Path 2024" class="cls-1" d="M12 18h20" transform="translate(-1.5 2.5)"/>
+    </g>
+</svg>

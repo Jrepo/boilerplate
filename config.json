@@ -1,0 +1,6 @@
+{
+	"name": "Test Website",
+	"version": "0.0.1",
+	"concatJS": false,
+	"minifyImgs": false
+}

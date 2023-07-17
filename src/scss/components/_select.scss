@@ -1,0 +1,103 @@
+// ==========================================================================
+// Form
+// ==========================================================================
+
+form {
+  max-width: 818px;
+  margin: 0 auto;
+  padding-bottom: rem(40);
+
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16); 
+  background-color: white;
+
+  padding: 34px 16px;
+
+  @include breakpoint(desktop) {
+    padding: 64px 106px 60px;    
+  }
+
+  > * {
+    display: block;
+  }
+
+  label {
+    font-size: rem(18);
+    margin-bottom: rem(8);
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    &.display-inline {
+      display: inline-block;
+      vertical-align: super;
+    }
+  }
+
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 45px;
+    font-size: rem(13);
+    padding: rem(11);
+    padding: 7px ​21px;
+    padding-left: 25px;
+    border-radius: 8px;
+    border: 2px solid #c5c5c5;
+    
+    background-color: #e8e8e8;
+    border: 0px solid transparent;
+    -webkit-box-shadow:inset 0 0 0px rgba(0, 0, 0, 0.16);
+       -moz-box-shadow:inset 0 0 0px rgba(0, 0, 0, 0.16);
+            box-shadow:inset 0 0 0px rgba(0, 0, 0, 0.16);
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+    border-radius: 5px;
+    background: url('_IMGS/icon-caret-down.svg') no-repeat right #ddd;
+    -webkit-appearance: none;
+    background-position-x: 97%;   
+
+    @include breakpoint(desktop) {
+      font-size: rem(18);
+    }
+
+    &.submit {
+      background-color: $brand-darkblue;
+      color: white;
+      border-radius: 27px;
+      max-width: 112px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      padding-right: 25px;
+      border: 0px solid transparent;
+      &:hover,
+      &:focus {
+        background-color: $brand-darkgrey;
+      }
+      &.disable {
+        pointer-events: none;
+        background-color: grey;
+      }
+    }
+  }
+
+  input.edited:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+
+  option {
+    margin-left: rem(5);
+  }
+
+  .select-wrapper {
+    position: relative;
+  }
+  
+  .btn.submit {
+    width: 100%;
+  }
+}
+

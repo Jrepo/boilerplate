@@ -1,0 +1,20 @@
+{
+  "head-req-title": true,
+  "title-no-dup": true,
+  "href-style": "relative",
+
+  "attr-name-style": "dash",
+  "attr-no-dup": true,
+  "attr-no-unsafe-char": true,
+  "attr-quote-style": "double",
+  "attr-req-value": false,
+
+  "tag-close": false,
+  "tag-name-lowercase": true,
+
+  "id-class-style": "dash",
+  "id-no-dup": true,
+  "class-style": "dash",
+
+  "img-req-alt": true
+}

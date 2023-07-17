@@ -1,0 +1,66 @@
+// ==========================================================================
+// ADA Compliance Helpers
+// ==========================================================================
+
+
+/*
+  FOCUS RING INDICATION TOGGLING
+*/
+// Deactivate focus ring by default
+a, button, input {
+  text-decoration: none;
+  &:focus, &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+// Activate focus ring for users navigating via keyboard
+.keyboard-user {
+  a, button, input {
+    &:focus, &:hover {
+      text-decoration: underline;
+      outline: 2px solid $brand-darkgrey;
+    }
+  }
+}
+
+.skip-to-content-link {
+  height: 30px;
+  width: 200px;
+  left: 90px;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-300%);
+  transition: transform .3s;
+  height: 41px;
+  border-radius: 5px;
+  border: 2px solid $brand-darkgrey;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color .45s ease,color .45s ease;
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+
+  &:focus {
+    transform: translateY(0%);
+  }
+}
+
+/*
+  Block-Level-Links: Links must be within paragraphs so that they maintain context,
+  this class allows for a link to be within a paragraph but be styled as on a different line.
+*/
+p {
+  a {
+    display: inline-block;
+    margin-top: 0px; 
+    &.block-level-link {
+      // the styles below will achieve a look that will display the link on its own line, setting it apart visually, while also maintaining the correct semantic structure to provide necessary context for the link.    
+      display: block;
+      margin-top: 1.5rem; // This should be set to match the design requirements for the specific project.
+    }
+  }
+}

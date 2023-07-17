@@ -1,0 +1,16 @@
+// ==========================================================================
+// Helpers
+// ==========================================================================
+
+
+/*
+  this ensures that the icon or span within a link or button does not
+  prevent the link or button from firing as it should, which is a common bug.
+*/
+a,
+button {
+  span,
+  i {
+    pointer-events: none;
+  }
+}

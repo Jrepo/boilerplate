@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+    <defs>
+        <style>
+            .cls-2{stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none;stroke:#fff}
+        </style>
+    </defs>
+    <g id="Icon_feather-arrow-right-circle" data-name="Icon feather-arrow-right-circle" transform="translate(-2 -2)">
+        <path id="Path_1948" data-name="Path 1948" d="M33 18A15 15 0 1 1 18 3a15 15 0 0 1 15 15z" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#40388a;stroke:#40388a"/>
+        <path id="Path_1949" data-name="Path 1949" class="cls-2" d="m18 23.7 5.848-5.848L18 12" transform="translate(.609 .152)"/>
+        <path id="Path_1950" data-name="Path 1950" class="cls-2" d="M12 18h11.7" transform="translate(-.457)"/>
+    </g>
+</svg>

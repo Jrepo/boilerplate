@@ -1,0 +1,33 @@
+// ==========================================================================
+// Media Queries
+// ==========================================================================
+
+/*
+Site-Max-Width var should match the width of the desktop Zeplin/PSD for your project.
+We don't want the site content to expand forever on larger screens.
+On occasion we are handed off desktop designs with the desktop min-with, when that happens please ask the designers for the max-width value.
+*/
+$site-max-width: 1920px;
+
+@mixin breakpoint ($point) {
+  @if $point == landscape-phone {
+    @media (min-width: 576px) { @content; }
+  } @else if $point == tablet {
+    @media (min-width: 768px) { @content; }
+  } @else if $point == desktop {
+    @media (min-width: 992px) { @content; }
+  } @else if $point == desktop-large {
+    @media (min-width: 1200px) { @content; }
+  } @else if $point == desktop-xl {
+    @media (min-width: 1400px) { @content; }
+  } @else if $point == site-max-width {
+    @media (min-width: $site-max-width) { @content; }
+  }
+}
+/*
+Usage Example:
+
+@include break-point(desktop-large) {
+width: 100%;
+}
+*/
